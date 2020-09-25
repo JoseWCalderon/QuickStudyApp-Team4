@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStudyApp.iOS", "QuickS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickStudyApp", "QuickStudyApp\QuickStudyApp\QuickStudyApp.csproj", "{477B7DE2-061C-477C-B730-4ACB5CE181CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{59935A50-13DE-4953-A1C7-4D86B7047520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{59935A50-13DE-4953-A1C7-4D86B7047520}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

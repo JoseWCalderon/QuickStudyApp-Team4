@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.ReportABugPage"                 
+             xmlns:controls="clr-namespace:QuickStudyApp.Custom" 
+             Title="Report a Bug">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Please explain the bug you noticed..."
+                   Margin="10"
+                   FontSize="20"
+                HorizontalOptions="Center" />
+
+            <!-- Import this class custom that has my custom classes and mods -->
+            <controls:ExtendedEditorControl Placeholder="Write Here"
+                                            PlaceholderColor="Black"
+                                            Margin="10,50,10,10"/>
+
+            <Button Text="Submit"
+                        Margin="100,120,100,10"
+                        CornerRadius="30"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        Clicked="SubmitButton"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -16,7 +16,11 @@
                 
             </Entry>
                    
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" Margin="100,50,100,50"
+                    CornerRadius="40"
+                    WidthRequest="100"
+                    HeightRequest="50" />
+
             
         </StackLayout>
     </ContentPage.Content>

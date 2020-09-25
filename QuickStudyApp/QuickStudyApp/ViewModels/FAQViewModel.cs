@@ -5,11 +5,12 @@ using Xamarin.Forms;
 
 namespace QuickStudyApp.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class FAQViewModel : BaseViewModel
     {
-        public AboutViewModel()
+        public FAQViewModel()
         {
-            Title = "About";
+            Title = "FAQ";
+            
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamain-quickstart"));
 
            
