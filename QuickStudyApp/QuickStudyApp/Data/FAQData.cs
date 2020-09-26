@@ -7,6 +7,7 @@ namespace QuickStudyApp.Data
 {
     public static class FAQData
     {
+        //create a list of FAQs that we can access later in the app
         public static IList<FAQ> FAQs { get; private set; }
         static FAQData()
         {
@@ -16,35 +17,40 @@ namespace QuickStudyApp.Data
             {
                 QuestionID = 1,
                 Question = "How do i change my units?",
-                Details = "provide the answer here"
+                Details = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam autem ad laboriosam officiis dolores," +
+                " quia incidunt! Cum, eos? Ratione, repudiandae? Nihil sint repudiandae mollitia deserunt obcaecati magni quae numquam."
             });
 
             FAQs.Add(new FAQ
             {
                 QuestionID = 2,
                 Question = "How do i manage my calandar?",
-                Details = "Details"
+                Details = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam autem ad laboriosam officiis dolores," +
+                " quia incidunt! Cum, eos? Ratione, repudiandae? Nihil sint repudiandae mollitia deserunt obcaecati magni quae numquam."
             });
 
             FAQs.Add(new FAQ
             {
                 QuestionID = 3,
                 Question = "How do i change my assessment dates?",
-                Details = "Details"
+                Details = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam autem ad laboriosam officiis dolores," +
+                " quia incidunt! Cum, eos? Ratione, repudiandae? Nihil sint repudiandae mollitia deserunt obcaecati magni quae numquam."
             });
 
             FAQs.Add(new FAQ
             {
                 QuestionID = 4,
                 Question = "How do i find my team?",
-                Details = "Details"
+                Details = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam autem ad laboriosam officiis dolores," +
+                " quia incidunt! Cum, eos? Ratione, repudiandae? Nihil sint repudiandae mollitia deserunt obcaecati magni quae numquam."
             });
 
             FAQs.Add(new FAQ
             {
                 QuestionID = 5,
                 Question = "How do i contact my tutor?",
-                Details = "Details"
+                Details = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam autem ad laboriosam officiis dolores," +
+                " quia incidunt! Cum, eos? Ratione, repudiandae? Nihil sint repudiandae mollitia deserunt obcaecati magni quae numquam."
             });
 
             

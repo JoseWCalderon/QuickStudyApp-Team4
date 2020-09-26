@@ -20,7 +20,7 @@ namespace QuickStudyApp.Views
         private async void SubmitButton(object sender, EventArgs e)
         {
             await DisplayAlert("Success", "Your message has been sent!", "Close");
-            await Shell.Current.GoToAsync("TypeOfQuestionPage");
+            await Application.Current.MainPage.Navigation.PopAsync(); //Remove the page currently on top.
         }
     }
 }

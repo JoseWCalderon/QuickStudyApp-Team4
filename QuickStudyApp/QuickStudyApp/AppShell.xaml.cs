@@ -8,9 +8,16 @@ namespace QuickStudyApp
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {
+        Dictionary<string, Type> routes = new Dictionary<string, Type>();
+        public Dictionary<string, Type> Routes { get { return routes; } }
         public AppShell()
         {
             InitializeComponent();
+            RegisterRoutes();
+        }
+
+        void RegisterRoutes()
+        {
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(FAQPage), typeof(FAQPage));
@@ -21,11 +28,16 @@ namespace QuickStudyApp
             Routing.RegisterRoute(nameof(ReportABugPage), typeof(ReportABugPage));
             Routing.RegisterRoute(nameof(LeaveFeedbackPage), typeof(LeaveFeedbackPage));
             Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
+
+            foreach (var item in routes)
+            {
+                Routing.RegisterRoute(item.Key, item.Value);
+            }
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//LoginPage");
+            await Shell.Current.GoToAsync("LoginPage");
         }
     }
 }

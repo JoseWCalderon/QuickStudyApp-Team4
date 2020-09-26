@@ -27,6 +27,17 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+            <DataTemplate x:Key="FAQSearchTemplate">
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.15*" />
+                        <ColumnDefinition Width="0.85*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="1" 
+                       Text="{Binding Question}" 
+                       FontAttributes="Bold" />
+                </Grid>
+            </DataTemplate>
         </ResourceDictionary>        
     </Application.Resources>
 </Application>

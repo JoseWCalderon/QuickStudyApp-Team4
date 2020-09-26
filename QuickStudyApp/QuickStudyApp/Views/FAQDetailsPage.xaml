@@ -2,19 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuickStudyApp.Views.FAQDetailsPage"
-             Title="Details">
+             Title="Question">
 
     <ScrollView>
         <StackLayout Margin="20">
-            <Label Text="{Binding Question}"
+            <!--<Label Text="{Binding Question}"
                    HorizontalOptions="Center"
-                   Style="{DynamicResource TitleStyle}"/>
-            <Label Text="{Binding Details}"
-                   FontAttributes="Italic" 
-                   HorizontalOptions="Center"/>
-            <Button Text="Leave Feedback">
+                   Style="{DynamicResource TitleStyle}"/>-->
+            <Label x:Name="questionLabal"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   Text="Coworking Space"
+                   TextColor="{StaticResource Primary}"/>
+            <Label x:Name="detailsLabel"
+                   Text="Details of question here"
+                   Margin="0,50,0,0"
+                   TextColor="Black"
+                   />
+            <!--<Button Text="Leave Feedback">
                 
-            </Button>
+            </Button>-->
         </StackLayout>
     </ScrollView>
 </ContentPage>
