@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="QuickStudyApp.Views.LoginPage"
+             xmlns:login="clr-namespace:QuickStudyApp.ViewModels"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center" Margin="0,100,0, 0">
@@ -16,10 +17,14 @@
                 
             </Entry>
                    
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" Margin="100,50,100,50"
+            <Button VerticalOptions="Center" 
+                    Text="Login" 
+                    Clicked="Login_Clicked"
+                    Margin="100,50,100,50"
                     CornerRadius="40"
                     WidthRequest="100"
-                    HeightRequest="50" />
+                    HeightRequest="50"
+                    />
 
             
         </StackLayout>

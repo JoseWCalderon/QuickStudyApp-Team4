@@ -14,6 +14,9 @@ namespace QuickStudyApp
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+
+            //try to load the account from a secure storage xamarin.essentials
+
             MainPage = new AppShell();
         }
 

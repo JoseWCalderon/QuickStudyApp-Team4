@@ -18,7 +18,7 @@ namespace QuickStudyApp.ViewModels
         private async void OnLoginClicked(object obj)
         {
             //// Prefixing with `//` switfferent navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync("HomePage");
+            await Shell.Current.GoToAsync("AppShell");
 
 
        
