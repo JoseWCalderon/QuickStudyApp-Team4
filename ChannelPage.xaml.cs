@@ -10,6 +10,10 @@ namespace QuickStudyApp.Views
         public ChannelPage()
         {
             InitializeComponent();
+
+            BindingContext = this;
+
+
         }
     }
 }
