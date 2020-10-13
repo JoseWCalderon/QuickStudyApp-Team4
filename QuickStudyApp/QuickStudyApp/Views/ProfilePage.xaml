@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.ProfilePage">
+            
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Ellipse Fill="white" Margin="100,40,100,10"
+                Stroke= "blue"
+                StrokeThickness="1"
+                WidthRequest="150"
+                HeightRequest="150"
+                HorizontalOptions="Center" />
+            <Label Text ="Queensland University of Technology"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,0"/>
+            <Label Text="FirstName" Margin="40,30,10,0"
+                   FontSize="20"/>
+            <Label Text="LastName" Margin="40,20,10,0"
+                   FontSize="20"/>
+            <Label Text="Faculty" Margin="40,20,10,0"
+                   FontSize="20"/>
+            <Label Text="StudentID" Margin="40,20,10,0"
+                   FontSize="20"/>
+            <Label Text="Email"  Margin="40,20,10,0"
+                   FontSize="20"/>
+
+            <Button VerticalOptions="Center" Text="Logout" Command="{Binding LogoutCommand}" Margin="100,30,100,50"
+                    FontSize="20"
+                    TextColor="Black"
+                    CornerRadius="12"
+                    WidthRequest="100"
+                    HeightRequest="50" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
