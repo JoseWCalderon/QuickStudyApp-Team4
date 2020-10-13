@@ -17,6 +17,9 @@ namespace QuickStudyApp
 
             //try to load the account from a secure storage xamarin.essentials
 
+
+            //load our main page here through MainPage
+            //MainPage = new NavigationPage(new LoginPage());
             MainPage = new AppShell();
         }
 

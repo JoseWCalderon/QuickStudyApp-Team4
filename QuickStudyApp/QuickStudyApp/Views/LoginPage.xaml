@@ -6,10 +6,17 @@
              mc:Ignorable="d"
              x:Class="QuickStudyApp.Views.LoginPage"
              xmlns:login="clr-namespace:QuickStudyApp.ViewModels"
-             Shell.NavBarIsVisible="False">
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             Shell.TabBarIsVisible="False"
+             Shell.PresentationMode="ModalAnimated">
+    
+    
+    
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center" Margin="0,100,0, 0">
-            <Entry x:Name="emailEntry"
+            <Entry x:Name="studentIDEntry"
                    Text="{}"
                    Placeholder="Student ID"
                    Keyboard="Numeric"

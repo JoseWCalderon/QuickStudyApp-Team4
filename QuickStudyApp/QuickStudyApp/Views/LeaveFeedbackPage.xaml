@@ -5,6 +5,7 @@
              xmlns:controls="clr-namespace:QuickStudyApp.Custom" 
              Title="Leave Feedback">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Label Text="Please write your feedback below..."
                    Margin="10"
@@ -23,5 +24,6 @@
                         TextColor="White"
                         Clicked="SubmitButton"/>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

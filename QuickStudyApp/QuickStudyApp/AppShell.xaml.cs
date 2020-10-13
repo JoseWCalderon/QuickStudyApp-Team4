@@ -28,6 +28,10 @@ namespace QuickStudyApp
             Routing.RegisterRoute(nameof(ReportABugPage), typeof(ReportABugPage));
             Routing.RegisterRoute(nameof(LeaveFeedbackPage), typeof(LeaveFeedbackPage));
             Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
+            Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
+            Routing.RegisterRoute(nameof(ThirdPartyPage), typeof(ThirdPartyPage));
+            Routing.RegisterRoute(nameof(CalendarPage), typeof(CalendarPage));
+
 
             foreach (var item in routes)
             {
@@ -37,7 +41,14 @@ namespace QuickStudyApp
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("LoginPage");
+            await Navigation.PushAsync(new LoginPage());
+        }
+
+        //side bar flyout menu navigation link method navigation
+        private async void MyProfileItemClicked(object sender, EventArgs e)
+        {
+           // await Navigation.PushAsync("ProfilePage");
+            await Shell.Current.GoToAsync("ProfilePage");
         }
     }
 }

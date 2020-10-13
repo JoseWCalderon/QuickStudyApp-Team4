@@ -14,7 +14,7 @@ namespace QuickStudyApp.Views
     public partial class LoginPage : ContentPage
     {
         
-
+        
         public LoginPage()
         {
             InitializeComponent();
@@ -27,7 +27,25 @@ namespace QuickStudyApp.Views
             //var HomePageView = new HomePage();
             //this.Navigate(typeof(HomePage), null);
             //App.Current.MainPage.Navigation.PushAsync(new HomePage());
-            await Shell.Current.GoToAsync("HomePage");
+            //await Shell.Current.GoToAsync("HomePage");
+
+            // await Navigation.PushAsync(new HomePage());
+
+            // store here true or false if the text entry is empty
+            bool isStudentIDEmpty = string.IsNullOrEmpty(studentIDEntry.Text);
+
+            //check condition here and do this
+            if(isStudentIDEmpty == true)
+            {
+                await DisplayAlert("Sign In Details Incorrect", "Please type in your Student ID", "Close");
+            }
+            else
+            {
+                await App.Current.MainPage.Navigation.PushAsync(new HomePage());
+            }
+            
+
+            
         }
     }
 }
