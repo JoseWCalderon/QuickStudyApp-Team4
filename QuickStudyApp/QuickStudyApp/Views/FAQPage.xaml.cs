@@ -58,7 +58,7 @@ namespace QuickStudyApp.Views
 
 
             private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
-        {
+       {
 
             if (string.IsNullOrEmpty(e.NewTextValue))
             {

@@ -14,6 +14,8 @@ namespace QuickStudyApp.Views
     {
         public HomePage()
         {
+            //OnAppearing on load - research
+
             InitializeComponent();
         }
     }

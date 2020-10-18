@@ -1,25 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="QuickStudyApp.Views.FAQDetailsPage"
-             Title="Question">
+             x:Class="QuickStudyApp.Views.ChannelDetailPage"
+             Title="#Channel Detail">
 
     <ScrollView>
         <StackLayout Margin="20">
             <!--<Label Text="{Binding Question}"
                    HorizontalOptions="Center"
                    Style="{DynamicResource TitleStyle}"/>-->
-            <Label x:Name="questionLabal"
+            <Label x:Name="ChannelName"
                    FontSize="22"
                    FontAttributes="Bold"
                    Text="Coworking Space"
                    TextColor="{StaticResource Primary}"/>
-            <Label x:Name="detailsLabel"
+            <Label x:Name="ChannelDetail"
                    Text="Details of question here"
                    Margin="0,50,0,0"
                    TextColor="Black"
                    />
-            
             <!--<Button Text="Leave Feedback">
                 
             </Button>-->

@@ -11,6 +11,7 @@ namespace QuickStudyApp.Droid
 {
     [Activity(Label = "QuickStudyApp", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -18,6 +19,11 @@ namespace QuickStudyApp.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
+            //added this experimental feature here from Xamarin docs
+            Xamarin.Forms.Forms.SetFlags("Shapes_Experimental");
+
+            
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

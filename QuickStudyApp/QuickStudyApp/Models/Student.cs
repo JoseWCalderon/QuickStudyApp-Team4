@@ -11,7 +11,6 @@ namespace QuickStudyApp.Models
         public string LastName { get; set; }
 
         public string StudentID { get; set; }
-
     }
-
+        
 }

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.ChannelPage"
+             xmlns:data="clr-namespace:QuickStudyApp.Data"
+             xmlns:controls="clr-namespace:QuickStudyApp.Controls"
+             xmlns:vm="clr-namespace:QuickStudyApp.ViewModels"
+
+             Title="IAB330">
+
+    <ContentPage.BindingContext>
+        <vm:ChannelViewModel />
+    </ContentPage.BindingContext>
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+
+            <SearchBar Margin="0,0,10,0" 
+                       x:Name="searchBar"
+               HorizontalOptions="Fill"
+               VerticalOptions="CenterAndExpand"
+               Placeholder="Search"
+               CancelButtonColor="Black"
+               PlaceholderColor="LightGray"
+               TextTransform="Lowercase"
+               HorizontalTextAlignment="Start"
+               
+                       />
+
+
+
+            <Label HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Announcements"
+                            TextColor="Black"
+                              FontSize="22"
+                              FontAttributes="Bold"
+                            >
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="20,0,0,0">
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Welcome to Semester 2, 2020 and the IAB330 - Mobile Application Development unit!"
+                            TextColor="Gray"
+                              
+                            >
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label HorizontalOptions="End"
+                VerticalOptions="EndAndExpand"
+                >
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Sri (Co-Unit Coordinator/Lecturer)"
+                            TextColor="Gray"
+                             FontSize="Micro"
+                            >
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label HorizontalOptions="End"
+                VerticalOptions="EndAndExpand"
+                >
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Trina (Co-Unit coordinator)"
+                            TextColor="Gray"
+                             FontSize="Micro"
+                            >
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label HorizontalOptions="End"
+                VerticalOptions="EndAndExpand"
+                >
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Josh (Tutor)"
+                            TextColor="Gray"
+                             FontSize="Micro"
+                            >
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Button Text="Channels"
+                Margin="0,0,0,0"
+                BackgroundColor="white"
+                TextColor="Black"
+                FontSize="19"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+                Clicked="Channel_Button"
+
+                >
+
+            </Button>
+
+            <ListView ItemsSource="{x:Static data:ChannelData.channels}"
+                  Margin="0,0,0,0"
+                  HasUnevenRows="True"
+                  ItemSelected="selectedChannel_ItemSelected"
+                  ItemTapped="tappedChannel_ItemTapped"
+                  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"
+                                   Text="{Binding Name}"
+                                   TextColor="Gray"
+                                   FontSize="15"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+            <Grid Margin="50,0,50,30">
+                <ImageButton Source="contacts_icon.png"
+                         HorizontalOptions="Start"
+                         VerticalOptions="CenterAndExpand"
+                         WidthRequest="80"
+                         HeightRequest="300"
+                         Aspect="Fill"
+                         BackgroundColor="White"
+                         Clicked="ImageButton_Clicked"
+                         />
+                <ImageButton Source="Files_icon.png"
+                         HorizontalOptions="End"
+                         VerticalOptions="CenterAndExpand"
+                         WidthRequest="80"
+                         HeightRequest="300"
+                         Aspect="Fill"
+                         BackgroundColor="White"
+                         Clicked="Files_Clicked"
+                         />
+            </Grid>
+
+
+
+
+
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>
