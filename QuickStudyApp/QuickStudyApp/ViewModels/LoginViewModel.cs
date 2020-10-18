@@ -9,6 +9,8 @@ namespace QuickStudyApp.ViewModels
     public class LoginViewModel : BaseViewModel
     {
         
+
+
         public Command LoginCommand { get; }
 
         public LoginViewModel()

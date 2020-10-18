@@ -3,17 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuickStudyApp.Views.ProfilePage"
              Shell.NavBarIsVisible="False">
-
-
     <ContentPage.Content>
-        <ScrollView>
         <StackLayout>
-            <Ellipse Fill="white" Margin="100,40,100,10"
+            <Ellipse Fill="White" Margin="100,40,100,10"
                 Stroke= "blue"
                 StrokeThickness="1"
                 WidthRequest="150"
                 HeightRequest="150"
                 HorizontalOptions="Center" />
+
             <Label Text ="Queensland University of Technology"
                    FontSize="20"
                    HorizontalOptions="Center"
@@ -39,7 +37,6 @@
                     WidthRequest="100"
                     HeightRequest="50" />
         </StackLayout>
-        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
     

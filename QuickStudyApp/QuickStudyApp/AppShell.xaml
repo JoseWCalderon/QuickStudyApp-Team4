@@ -93,7 +93,7 @@
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
 
         
-        <ShellContent Title="Home" Icon="home_Large.png" ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="Home" Icon="home_Large.png" ContentTemplate="{DataTemplate local:ChannelPage}" />
         <ShellContent Title="Calendar" Icon="Calendar_Large.png" ContentTemplate="{DataTemplate local:CalendarPage}" />
         
         <!--Added here two extra navigation bars -->

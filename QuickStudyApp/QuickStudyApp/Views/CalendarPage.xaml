@@ -4,9 +4,16 @@
              x:Class="QuickStudyApp.Views.CalendarPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="This is our calendar!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Press me!"
+        Image="icon.png"
+        BackgroundColor="White"
+        BorderRadius="10"
+        BorderWidth="2"
+        BorderColor="Black"
+        HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
