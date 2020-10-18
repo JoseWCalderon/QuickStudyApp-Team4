@@ -7,8 +7,8 @@
              xmlns:vm="clr-namespace:QuickStudyApp.ViewModels"
 
              Title="IAB330">
-    
-        <ContentPage.BindingContext>
+
+    <ContentPage.BindingContext>
         <vm:ChannelViewModel />
     </ContentPage.BindingContext>
 
@@ -24,12 +24,9 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <ScrollView>
+        <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
 
-        <StackLayout BackgroundColor="White" 
-                     VerticalOptions="FillAndExpand" 
-                     HorizontalOptions="Fill">
-                <SearchBar Margin="0,0,10,0" 
+            <SearchBar Margin="0,0,10,0" 
                        x:Name="searchBar"
                HorizontalOptions="Fill"
                VerticalOptions="CenterAndExpand"
@@ -42,136 +39,146 @@
                        />
 
 
-                <StackLayout>
+
             <Label HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"
-               Margin="25"
                 >
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Announcements"
                             TextColor="Black"
-                              FontSize="20"
+                              FontSize="22"
+                              FontAttributes="Bold"
                             >
                         </Span>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-               </StackLayout>
-            <StackLayout>
-                <Label HorizontalOptions="Center"
+
+            <Label HorizontalOptions="Center"
                 VerticalOptions="Center"
                 Margin="20,0,0,0">
 
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Welcome to Semester 2, 2020 and the IAB330 - Mobile Application Development unit!"
-                              TextColor="Gray"
-                              >
+                            TextColor="Gray"
+                              
+                            >
                         </Span>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-                </StackLayout>
-            <StackLayout>
-                <Label HorizontalOptions="End"
+
+            <Label HorizontalOptions="End"
                 VerticalOptions="EndAndExpand"
                 >
 
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Sri (Co-Unit Coordinator/Lecturer)"
-                              FontSize="Micro"></Span>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
-                </StackLayout>
-
-            <StackLayout>
-                <Label HorizontalOptions="Start"
-                VerticalOptions="CenterAndExpand"
-                Margin="10,10,0,0">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Channels"
-                            TextColor="Black"
-                            TextDecorations="Underline">
-                            <Span.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding ClickChannels}"
-                                    />
-                            </Span.GestureRecognizers>
+                            TextColor="Gray"
+                             FontSize="Micro"
+                            >
                         </Span>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-                </StackLayout>
-            
+
+            <Label HorizontalOptions="End"
+                VerticalOptions="EndAndExpand"
+                >
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Trina (Co-Unit coordinator)"
+                            TextColor="Gray"
+                             FontSize="Micro"
+                            >
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label HorizontalOptions="End"
+                VerticalOptions="EndAndExpand"
+                >
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Josh (Tutor)"
+                            TextColor="Gray"
+                             FontSize="Micro"
+                            >
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Button Text="Channels"
+                Margin="0,0,0,0"
+                BackgroundColor="white"
+                TextColor="Black"
+                FontSize="19"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+                Clicked="Channel_Button"
+
+                >
+
+            </Button>
+
             <ListView ItemsSource="{x:Static data:ChannelData.channels}"
-                      Margin="5"
-                      HasUnevenRows="True"
-                      ItemSelected="ListView_ItemSelected">
-                
+                  Margin="0,0,0,0"
+                  HasUnevenRows="True"
+                  ItemSelected="selectedChannel_ItemSelected"
+                  ItemTapped="tappedChannel_ItemTapped"
+                  >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Grid Padding="10">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
-                                        <RowDefinition Height="*"/>
-
-                                    </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    
-                                </Grid.ColumnDefinitions>
-                                    <Label Grid.Column="0"
-                                           Text="{Binding Name}"
-                                           FontAttributes="Bold"
-                                       />
-                                </Grid>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"
+                                   Text="{Binding Name}"
+                                   TextColor="Gray"
+                                   FontSize="15"/>
+                            </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                </ListView>
 
-            <Label HorizontalOptions="Start"
-                VerticalOptions="CenterAndExpand"
-                Margin="0,0,0,0">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Contacts"
-                            TextColor="Black"
-                            TextDecorations="Underline">
-                            <Span.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding ClickContacts}"
-                                    />
-                            </Span.GestureRecognizers>
-                        </Span>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            </ListView>
+
+            <Grid Margin="50,0,50,30">
+                <ImageButton Source="contacts_icon.png"
+                         HorizontalOptions="Start"
+                         VerticalOptions="CenterAndExpand"
+                         WidthRequest="80"
+                         HeightRequest="300"
+                         Aspect="Fill"
+                         BackgroundColor="White"
+                         Clicked="ImageButton_Clicked"
+                         />
+                <ImageButton Source="Files_icon.png"
+                         HorizontalOptions="End"
+                         VerticalOptions="CenterAndExpand"
+                         WidthRequest="80"
+                         HeightRequest="300"
+                         Aspect="Fill"
+                         BackgroundColor="White"
+                         Clicked="Files_Clicked"
+                         />
+            </Grid>
 
 
 
-            <Label HorizontalOptions="Start"
-                VerticalOptions="CenterAndExpand"
-                Margin="10,10,0,0">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Files"
-                            TextColor="Black"
-                            TextDecorations="Underline">
-                            <Span.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding ClickFiles}"
-                                    />
-                            </Span.GestureRecognizers>
-                        </Span>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+
 
         </StackLayout>
-    </ScrollView>
-
 
     </Grid>
 

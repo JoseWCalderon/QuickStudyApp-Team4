@@ -19,14 +19,14 @@ namespace QuickStudyApp.Data
 
             channels.Add(new Channel
             {
-                Name = "# Assignment 1",
-                Description = "Students can post anything about Assignment 1 in this channel!"
+                Name = "# IAB330 Team4",
+                Description = "This channel is for team 4 to talk about assignment 1 and assignment 2!"
             });
 
             channels.Add(new Channel
             {
-                Name = "# Assignment 2",
-                Description = "Students can post anything about Assignment 2 in this channel!"
+                Name = "# WED 5PM (Hamish)",
+                Description = "This channel is for the discussion of the students in the workshop at 5pm on Wednesday!"
             });
 
             channels.Add(new Channel

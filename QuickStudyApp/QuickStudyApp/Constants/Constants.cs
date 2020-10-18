@@ -6,7 +6,7 @@ namespace QuickStudyApp.Constants
 {
     public class Constants
     {
-        public const string 
+        
 
     }
 }

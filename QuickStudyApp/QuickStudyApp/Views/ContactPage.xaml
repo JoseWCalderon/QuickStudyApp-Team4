@@ -36,17 +36,13 @@
                 Margin="0,20,0,20"
                 VerticalOptions="CenterAndExpand"
                        />
-            <StackLayout>
-                    <Image Source="Myers_Edited.png"/>
-                </StackLayout>
-
-            <StackLayout Margin="20,35,20,20">
+           
                 <Image Source="Myers_Trina.jpg"
-                       HeightRequest="300"
-                       HorizontalOptions="Center">
+                       HeightRequest="100"
+                       WidthRequest="100"
+                       HorizontalOptions="Center"/>
 
-                </Image>
-            </StackLayout>
+
 
                 <Label HorizontalOptions="Center"
                        
@@ -66,9 +62,10 @@
                 </Label>
 
 
-            <Image Source="contacts_icon.png"
+            <Image Source="Sri.jpg"
                        HorizontalOptions="Center"
-                       Margin="0,20,0,20"
+                       HeightRequest="100"
+                       WidthRequest="100"
                        VerticalOptions="CenterAndExpand"/>
 
                 <Label HorizontalOptions="Center"
@@ -78,6 +75,7 @@
                        TextColor="Black"
                        FontSize="18"
                    />
+
                 <Label HorizontalOptions="Center"
                       
                         VerticalOptions="CenterAndExpand"
@@ -88,9 +86,10 @@
                 </Label>
 
 
-            <Image Source="contacts_icon.png"
+            <Image Source="Josh.jpg"
                        HorizontalOptions="Center"
-                       Margin="0,20,0,20"
+                       HeightRequest="100"
+                       WidthRequest="100"
                        VerticalOptions="CenterAndExpand"/>
 
                 <Label HorizontalOptions="Center"
@@ -110,9 +109,10 @@
                 </Label>
 
            
-            <Image Source="contacts_icon.png"
+            <Image Source="Hamish.png"
                        HorizontalOptions="Center"
-                       Margin="0,20,0,20"
+                       HeightRequest="100"
+                       WidthRequest="100"
                        VerticalOptions="CenterAndExpand"/>
 
                 <Label HorizontalOptions="Center"
@@ -125,7 +125,7 @@
                 <Label HorizontalOptions="Center"
                 
                         VerticalOptions="CenterAndExpand"
-                       Text="Hamish Sadler"
+                       Text="Email: hamish.sadler@qut.edu.au"
                        TextColor="Black"
                        FontSize="18">
 

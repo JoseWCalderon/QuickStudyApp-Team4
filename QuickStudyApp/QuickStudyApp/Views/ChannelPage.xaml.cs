@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using QuickStudyApp.Data;
+using QuickStudyApp.Models;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace QuickStudyApp.Views
@@ -10,11 +12,43 @@ namespace QuickStudyApp.Views
         public ChannelPage()
         {
             InitializeComponent();
+
+            BindingContext = this;
+
+
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void selectedChannel_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 
+            Channel selectedChannel = e.SelectedItem as Channel;
+            foreach (var Channel in ChannelData.channels)
+            {
+                if (selectedChannel.Name == Channel.Name)
+                {
+                    Navigation.PushAsync(new ChannelDetailPage(selectedChannel));
+                }
+            }
+        }
+
+        private void tappedChannel_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            Channel tappedItem = e.Item as Channel;
+        }
+
+        async void ImageButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Shell.Current.GoToAsync("ContactPage");
+        }
+
+        async void Files_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Shell.Current.GoToAsync("FilePage");
+        }
+
+        private async void Channel_Button(object sender, EventArgs e)
+        {
+            await Launcher.OpenAsync("https://teams.microsoft.com");
         }
     }
 }

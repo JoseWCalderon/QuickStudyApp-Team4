@@ -20,7 +20,7 @@ namespace QuickStudyApp
 
             //load our main page here through MainPage
            // MainPage = new NavigationPage(new LoginPage());
-            MainPage = new ContactPage();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()
