@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="QuickStudyApp.Views.ProfilePage">
-            
+             x:Class="QuickStudyApp.Views.ProfilePage"
+             Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        
         <StackLayout>
-            <Ellipse Fill="white" Margin="100,40,100,10"
+            <Ellipse Fill="White" Margin="100,40,100,10"
                 Stroke= "blue"
                 StrokeThickness="1"
                 WidthRequest="150"
                 HeightRequest="150"
                 HorizontalOptions="Center" />
+
             <Label Text ="Queensland University of Technology"
                    FontSize="20"
                    HorizontalOptions="Center"
@@ -27,7 +27,10 @@
             <Label Text="Email"  Margin="40,20,10,0"
                    FontSize="20"/>
 
-            <Button VerticalOptions="Center" Text="Logout" Command="{Binding LogoutCommand}" Margin="100,30,100,50"
+            <Button VerticalOptions="Center" 
+                    Text="Logout" 
+                    Command="{Binding NavCommand}" 
+                    Margin="100,30,100,50"
                     FontSize="20"
                     TextColor="Black"
                     CornerRadius="12"

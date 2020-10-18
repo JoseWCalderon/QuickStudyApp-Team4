@@ -4,7 +4,9 @@
        xmlns:local="clr-namespace:QuickStudyApp.Views"
        Title="QuickStudyApp"
        x:Class="QuickStudyApp.AppShell"
-       FlyoutHeaderBehavior="Scroll">
+       FlyoutHeaderBehavior="Default"
+       FlyoutBehavior="Flyout"
+       Shell.NavBarIsVisible="True">
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
@@ -85,15 +87,17 @@
             <Image Source="Logo_Bigger.jpg"></Image>
         </StackLayout>
     </Shell.FlyoutHeader>
-    
+
+    <MenuItem Text="My Profile" StyleClass="MenuItemLayoutStyle" Clicked="MyProfileItemClicked" IconImageSource="profile.png"/>
+
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
         
-        
-        <ShellContent Title="Home" Icon="home_Large.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
-        <ShellContent Title="Calendar" Icon="Calendar_Large.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Home" Icon="home_Large.png" ContentTemplate="{DataTemplate local:ChannelPage}" />
+        <ShellContent Title="Calendar" Icon="Calendar_Large.png" ContentTemplate="{DataTemplate local:CalendarPage}" />
         
         <!--Added here two extra navigation bars -->
-        <ShellContent Title="Third Party" Icon="iconfinder_phone.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Third Party" Icon="iconfinder_phone.png" ContentTemplate="{DataTemplate local:ThirdPartyPage}" />
         <ShellContent Title="Help" Icon="help_icon.png" ContentTemplate="{DataTemplate local:FAQPage}" />
         
     </FlyoutItem>
@@ -101,6 +105,7 @@
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>
+    
 
     <!--
         This defines content that won't show up in a flyout menu. When this content is active the flyout menu won't be available.

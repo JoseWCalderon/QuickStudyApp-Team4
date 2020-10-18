@@ -10,9 +10,10 @@ namespace QuickStudyApp.Views
         public ChannelPage()
         {
             InitializeComponent();
+        }
 
-            BindingContext = this;
-
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
 
         }
     }

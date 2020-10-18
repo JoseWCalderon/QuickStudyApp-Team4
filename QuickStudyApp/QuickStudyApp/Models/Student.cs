@@ -12,6 +12,5 @@ namespace QuickStudyApp.Models
 
         public string StudentID { get; set; }
     }
-
         
 }

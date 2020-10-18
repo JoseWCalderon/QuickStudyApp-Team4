@@ -5,15 +5,11 @@ using Xamarin.Forms;
 
 namespace QuickStudyApp.Views
 {
-    public partial class ChannelPage : ContentPage
+    public partial class ContactPage : ContentPage
     {
-        public ChannelPage()
+        public ContactPage()
         {
             InitializeComponent();
-
-            BindingContext = this;
-
-
         }
     }
 }
