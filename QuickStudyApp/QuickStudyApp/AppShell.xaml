@@ -97,8 +97,10 @@
         <ShellContent Title="Calendar" Icon="Calendar_Large.png" ContentTemplate="{DataTemplate local:CalendarPage}" />
         
         <!--Added here two extra navigation bars -->
+        <ShellContent Title="Profile" Icon="profile.png" ContentTemplate="{DataTemplate local:ProfilePagee}" />
         <ShellContent Title="Third Party" Icon="iconfinder_phone.png" ContentTemplate="{DataTemplate local:ThirdPartyPage}" />
         <ShellContent Title="Help" Icon="help_icon.png" ContentTemplate="{DataTemplate local:FAQPage}" />
+        
         
     </FlyoutItem>
 
