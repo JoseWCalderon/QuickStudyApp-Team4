@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace QuickStudyApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HelpSessions : ContentPage
+    public partial class Page1 : ContentPage
     {
-        public HelpSessions()
+        public Page1()
         {
             InitializeComponent();
-        }
-
-        private async void HelpSearchClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new HelpSessionsWebpage());
         }
     }
 }

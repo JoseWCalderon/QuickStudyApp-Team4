@@ -1,20 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:data="clr-namespace:QuickStudyApp.Data"
+             xmlns:controls="clr-namespace:QuickStudyApp.Controls"
              x:Class="QuickStudyApp.Views.ClassesPage"
+             xmlns:vm="clr-namespace:QuickStudyApp.ViewModels"
+             
              Title= " Classes ">
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>
             <Button VerticalOptions="Center" 
                     Text="My Groups" 
-                    Command="{Binding NavCommand}" 
                     Margin="100,80,100,30"
                     FontSize="20"
                     TextColor="Black"
                     CornerRadius="12"
                     WidthRequest="100"
-                    HeightRequest="50" />
+                    HeightRequest="50" 
+                    Clicked="MyGroupsClicked"/>
             <Button VerticalOptions="Center" 
                     Text="Invitations" 
                     Command="{Binding NavCommand}" 
@@ -35,13 +39,13 @@
                     HeightRequest="50" />
             <Button VerticalOptions="Center" 
                     Text="Help Sessions" 
-                    Command="{Binding NavCommand}" 
                     Margin="100,30,100,30"
                     FontSize="20"
                     TextColor="Black"
                     CornerRadius="12"
                     WidthRequest="100"
-                    HeightRequest="50" />
+                    HeightRequest="50" 
+                    Clicked="HelpClicked"/>
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>
