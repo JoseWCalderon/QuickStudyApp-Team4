@@ -57,7 +57,7 @@ namespace QuickStudyApp.Views
         }
 
 
-            private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
+            private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
        {
 
             if (string.IsNullOrEmpty(e.NewTextValue))
@@ -75,7 +75,7 @@ namespace QuickStudyApp.Views
             //}
         }
 
-        private void selectedFAQ_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void SelectedFAQ_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 
             FAQ selectedFAQ = e.SelectedItem as FAQ;
@@ -95,9 +95,9 @@ namespace QuickStudyApp.Views
             //await Shell.Current.GoToAsync("FAQDetailsPage");
         
 
-        private void tappedFAQ_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void TappedFAQ_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            FAQ tappedItem = e.Item as FAQ;
+            FAQ TappedItem = e.Item as FAQ;
         }
 
         async void QuestionClicked(object sender, EventArgs e)

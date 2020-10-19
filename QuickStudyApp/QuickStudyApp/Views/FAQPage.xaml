@@ -38,7 +38,7 @@
                 </ContentView>
             </StackLayout>
             <SearchBar Margin="0,0,10,0" 
-                       x:Name="searchBar"
+                       x:Name="SearchBar"
                HorizontalOptions="Fill"
                VerticalOptions="CenterAndExpand"
                Placeholder="Search FAQs..."
@@ -46,8 +46,7 @@
                PlaceholderColor="LightGray"
                TextTransform="Lowercase"
                HorizontalTextAlignment="Start"
-               TextChanged="searchBar_TextChanged"
-                       />
+               TextChanged="SearchBar_TextChanged"/>
             
             
             
@@ -72,8 +71,8 @@
                 <ListView ItemsSource="{x:Static data:FAQData.FAQs}"
                           Margin="15"
                           HasUnevenRows="true"
-                          ItemSelected="selectedFAQ_ItemSelected"
-                          ItemTapped="tappedFAQ_ItemTapped">
+                          ItemSelected="SelectedFAQ_ItemSelected"
+                          ItemTapped="TappedFAQ_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
