@@ -19,4 +19,4 @@ namespace QuickStudyApp.Views
             Content = mygradesbrowser;
         }
     }
-}
+} 

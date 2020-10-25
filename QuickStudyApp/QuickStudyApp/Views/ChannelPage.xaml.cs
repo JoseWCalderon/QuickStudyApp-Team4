@@ -46,7 +46,7 @@ namespace QuickStudyApp.Views
             await Shell.Current.GoToAsync("FilePage");
         }
 
-        private async void Channel_Button(object sender, EventArgs e)
+        private async void Button_Clicked(System.Object sender, System.EventArgs e)
         {
             await Launcher.OpenAsync("https://teams.microsoft.com");
         }
