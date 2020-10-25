@@ -94,7 +94,7 @@
 
         
         <ShellContent Title="Home" Icon="home_Large.png" ContentTemplate="{DataTemplate local:ChannelPage}" />
-        <ShellContent Title="Calendar" Icon="Calendar_Large.png" ContentTemplate="{DataTemplate local:CalendarPage}" />
+        <ShellContent Title="Calendar" Icon="Calendar_Large.png" ContentTemplate="{DataTemplate local:Calendar}" />
         
         <!--Added here two extra navigation bars -->
         <ShellContent Title="Third Party" Icon="iconfinder_phone.png" ContentTemplate="{DataTemplate local:ThirdPartyPage}" />
