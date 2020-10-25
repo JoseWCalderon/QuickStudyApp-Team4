@@ -8,8 +8,6 @@ using System.IO;
 using QuickStudyApp.Views;
 using QuickStudyApp.Models;
 using System.Threading.Tasks;
-using PCLStorage;
-using FileSystem = PCLStorage.FileSystem;
 using QuickStudyApp.Services;
 
 namespace QuickStudyApp.ViewModels

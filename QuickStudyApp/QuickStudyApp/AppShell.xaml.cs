@@ -35,6 +35,11 @@ namespace QuickStudyApp
             Routing.RegisterRoute(nameof(ContactPage), typeof(ContactPage));
             Routing.RegisterRoute(nameof(FilePage), typeof(FilePage));
             Routing.RegisterRoute(nameof(ChannelDetailPage), typeof(ChannelDetailPage));
+            Routing.RegisterRoute(nameof(Schedule), typeof(Schedule)); 
+            Routing.RegisterRoute(nameof(AssignmentDue), typeof(AssignmentDue)); 
+            Routing.RegisterRoute(nameof(NewAssignmentDueDate), typeof(NewAssignmentDueDate)); 
+            Routing.RegisterRoute(nameof(NotesPage), typeof(NotesPage)); 
+            Routing.RegisterRoute(nameof(NewCalendar), typeof(NewCalendar));
 
 
             foreach (var item in routes)
