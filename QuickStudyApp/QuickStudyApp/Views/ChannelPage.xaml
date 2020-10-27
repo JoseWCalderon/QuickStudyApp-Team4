@@ -122,11 +122,11 @@
                 FontSize="19"
                 FontAttributes="Bold"
                 HorizontalOptions="Start"
-                Clicked="Button_Clicked"
+                Clicked="Channel_Button"
 
                 >
-            
-        </Button>
+
+            </Button>
 
         <ListView ItemsSource="{x:Static data:ChannelData.channels}"
                   Margin="0,0,0,0"
