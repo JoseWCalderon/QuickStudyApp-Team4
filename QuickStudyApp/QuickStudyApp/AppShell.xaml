@@ -94,13 +94,12 @@
 
         
         <ShellContent Title="Home" Icon="home_Large.png" ContentTemplate="{DataTemplate local:ChannelPage}" />
-        <!--<ShellContent Title="Calendar" Icon="Calendar_Large.png" ContentTemplate="{DataTemplate local:CalendarPage}" />-->
-      
-        <!--Added here two extra navigation bars -->
-        <ShellContent Title="Profile" Icon="profile.png" ContentTemplate="{DataTemplate local:ProfilePage}" />
-        <ShellContent Title="Third Party" Icon="iconfinder_phone.png" ContentTemplate="{DataTemplate local:ThirdPartyPage}" />
-        <ShellContent Title="Help" Icon="help_icon.png" ContentTemplate="{DataTemplate local:FAQPage}" />
         <ShellContent Title="Calendar" Icon="Calendar_Large.png" ContentTemplate="{DataTemplate local:Calendar}" />
+        
+        <!--Added here two extra navigation bars -->
+        <ShellContent Title="Third Party" Icon="iconfinder_phone.png" ContentTemplate="{DataTemplate local:ThirdPartyPage}" />
+        <ShellContent Title="Classes" Icon="profile.png" ContentTemplate="{DataTemplate local:ClassesPage}" />
+        <ShellContent Title="Help" Icon="help_icon.png" ContentTemplate="{DataTemplate local:FAQPage}" />
         
         
     </FlyoutItem>

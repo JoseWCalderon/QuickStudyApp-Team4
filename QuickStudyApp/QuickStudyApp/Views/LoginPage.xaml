@@ -13,7 +13,7 @@
              Shell.PresentationMode="ModalAnimated">
     
     
-    
+
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center" Margin="0,100,0, 0">
             <Entry x:Name="studentIDEntry"

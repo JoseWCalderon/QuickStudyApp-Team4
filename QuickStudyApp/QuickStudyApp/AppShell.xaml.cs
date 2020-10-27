@@ -30,7 +30,7 @@ namespace QuickStudyApp
             Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
             Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
             Routing.RegisterRoute(nameof(ThirdPartyPage), typeof(ThirdPartyPage));
-            //Routing.RegisterRoute(nameof(CalendarPage), typeof(CalendarPage));
+            Routing.RegisterRoute(nameof(CalendarPage), typeof(CalendarPage));
             Routing.RegisterRoute(nameof(ChannelPage), typeof(ChannelPage));
             Routing.RegisterRoute(nameof(ContactPage), typeof(ContactPage));
             Routing.RegisterRoute(nameof(FilePage), typeof(FilePage));
@@ -40,6 +40,8 @@ namespace QuickStudyApp
             Routing.RegisterRoute(nameof(NewAssignmentDueDate), typeof(NewAssignmentDueDate));
             Routing.RegisterRoute(nameof(NotesPage), typeof(NotesPage));
             Routing.RegisterRoute(nameof(NewCalendar), typeof(NewCalendar));
+
+
 
             foreach (var item in routes)
             {

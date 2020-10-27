@@ -4,7 +4,7 @@
              x:Class="QuickStudyApp.Views.Schedule"
              xmlns:local="clr-namespace:QuickStudyApp.ViewModels"
              Title="Schedule List">
-    
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+"  Clicked = "OnScheduleClicked" />
         </ContentPage.ToolbarItems>

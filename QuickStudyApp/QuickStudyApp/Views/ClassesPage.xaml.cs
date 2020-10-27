@@ -16,5 +16,21 @@ namespace QuickStudyApp.Views
         {
             InitializeComponent();
         }
+        
+        async void MyGroupsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MyGroups());
+        }
+
+        async void ToolsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ToolsMainPage());
+        }
+
+        async void HelpClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HelpSessions());
+        }
+
     }
 }
