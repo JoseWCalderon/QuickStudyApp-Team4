@@ -25,13 +25,14 @@
         </Grid.RowDefinitions>
         <ScrollView>
             <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-                 <Label Text="Recent Files"
+                <Label Text="RecentJose  Files"
                 FontSize="22"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 Margin="0,20,0,20"
                 VerticalOptions="CenterAndExpand"
                        />
+
                 <Grid Margin="20,0,0,0">
                     <Label Text="Type"
                            FontSize="15"

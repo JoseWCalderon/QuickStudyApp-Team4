@@ -122,9 +122,7 @@
                 FontSize="19"
                 FontAttributes="Bold"
                 HorizontalOptions="Start"
-                Clicked="Channel_Button"
-
-                >
+                Clicked="Channel_Button">
 
             </Button>
 
