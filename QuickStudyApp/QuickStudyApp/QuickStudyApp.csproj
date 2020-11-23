@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <Compile Remove="Views\Page1.xaml.cs" />
+    <Compile Remove="Views\Schedule.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="Views\Page1.xaml" />
+    <EmbeddedResource Remove="Views\Schedule.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -90,9 +92,6 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ReportABugPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Schedule.xaml">
-      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ThirdPartyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
