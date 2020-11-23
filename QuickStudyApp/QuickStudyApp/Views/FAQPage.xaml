@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:data="clr-namespace:QuickStudyApp.Data"
+             xmlns:controls="clr-namespace:QuickStudyApp.Controls"
+             x:Class="QuickStudyApp.Views.FAQPage"
+             xmlns:vm="clr-namespace:QuickStudyApp.ViewModels"
+             
+             Title="FAQ">
+    
+    
+    <ContentPage.BindingContext>
+        <vm:FAQViewModel />
+    </ContentPage.BindingContext>
+
+    
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+   
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,10,0,20" VerticalOptions="FillAndExpand">
+                    <Label Text="Frequently Asked Questions" FontSize="Title"/>
+                    <!--<Image Source="Basic_Logo.jpg" VerticalOptions="Center" HeightRequest="64" />-->
+                </ContentView>
+            </StackLayout>
+            <SearchBar Margin="0,0,10,0" 
+                       x:Name="SearchBar"
+               HorizontalOptions="Fill"
+               VerticalOptions="CenterAndExpand"
+               Placeholder="Search FAQs..."
+               CancelButtonColor="Black"
+               PlaceholderColor="LightGray"
+               TextTransform="Lowercase"
+               HorizontalTextAlignment="Start"
+               TextChanged="SearchBar_TextChanged"/>
+            
+            
+            
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="10,0,10,0" Spacing="0">
+
+                <!--<ListView Margin="15"
+                    ItemsSource="{x:Static data:FAQData.FAQs}"
+                    HasUnevenRows="True"
+                    SelectionMode="Single"
+                    
+                    
+                    
+                
+                     
+                    
+                    
+                   />-->
+                
+                <!--binding here to the data class, static method access-->
+                <ListView ItemsSource="{x:Static data:FAQData.FAQs}"
+                          Margin="15"
+                          HasUnevenRows="true"
+                          ItemSelected="SelectedFAQ_ItemSelected"
+                          ItemTapped="TappedFAQ_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0"
+                                           Text="{Binding Question}"
+                                           FontAttributes="Bold"
+                                           />
+                                    
+                                  
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            
+            
+           
+
+        </ScrollView>
+        <ScrollView Grid.Row="2">
+
+            <Button Text="Contact Us"
+                        Margin="100,100,100,100"
+                        CornerRadius="30"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        Clicked="QuestionClicked"/>
+        </ScrollView>
+    </Grid>
+    
+    <!--<Button Text="Contact Us"
+                        Command="{Binding OpenWebCommand}"
+                        CornerRadius="30"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />-->
+ 
+</ContentPage>

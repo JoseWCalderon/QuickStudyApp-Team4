@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.HelpSessions"
+             Title="Classes">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button VerticalOptions="Center" 
+                    Text="Search" 
+                    Margin="100,80,100,30"
+                    FontSize="20"
+                    TextColor="Black"
+                    CornerRadius="12"
+                    WidthRequest="100"
+                    HeightRequest="50" 
+                    Clicked ="HelpSearchClicked"/>
+
+                <Button VerticalOptions="Center" 
+                    Text="Schedule" 
+                    Margin="100,80,100,30"
+                    FontSize="20"
+                    TextColor="Black"
+                    CornerRadius="12"
+                    WidthRequest="100"
+                    HeightRequest="50"
+                    Clicked ="HelpSearchClicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

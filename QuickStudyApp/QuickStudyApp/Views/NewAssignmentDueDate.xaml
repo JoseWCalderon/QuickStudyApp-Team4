@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.NewAssignmentDueDate"
+             xmlns:local="clr-namespace:QuickStudyApp.ViewModels"
+             Title="Assignment Due Date">
+
+    <StackLayout Margin="20">
+        <Label Text="DueDate" FontSize="Title" FontAttributes="Bold" FontFamily="Arial"/>
+        <Editor Placeholder="Enter your note"
+
+                Text="{Binding Duedate}"
+
+                HeightRequest="100" />
+        <Label Text="Description" FontSize="Body" FontFamily="Arial"/>
+        <Editor Placeholder="Enter your Description"
+
+                Text="{Binding Description}"
+
+                HeightRequest="100" />
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*" />
+
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Save" 
+
+                    Clicked="OnSaveButtonClicked" />
+
+            <Button Grid.Column="1"
+
+                    Text="Delete" 
+
+                    Clicked="OnDeleteButtonClicked"/>
+
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

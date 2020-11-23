@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.FilePage"
+             xmlns:data="clr-namespace:QuickStudyApp.Data"
+             xmlns:controls="clr-namespace:QuickStudyApp.Controls"
+             xmlns:vm="clr-namespace:QuickStudyApp.ViewModels"
+
+             Title="IAB330">
+
+    <ContentPage.BindingContext>
+        <vm:FileViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView>
+            <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                <Label Text="RecentJose  Files"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,20,0,20"
+                VerticalOptions="CenterAndExpand"
+                       />
+
+                <Grid Margin="20,0,0,0">
+                    <Label Text="Type"
+                           FontSize="15"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           >
+
+                    </Label>
+
+                    <Label Text="Name"
+                           TextColor="Black"
+                           FontSize="15"
+                           HorizontalOptions="Start"
+                           Margin="50,0,0,0">
+
+                    </Label>
+
+                    <Label Text="Modified"
+                           TextColor="Black"
+                           FontSize="15"
+                           HorizontalOptions="Center">
+
+                    </Label>
+
+                    <Label Text="Location"
+                           TextColor="Black"
+                           FontSize="15"
+                           HorizontalOptions="End"
+                           Margin="0,0,50,0">
+
+                    </Label>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

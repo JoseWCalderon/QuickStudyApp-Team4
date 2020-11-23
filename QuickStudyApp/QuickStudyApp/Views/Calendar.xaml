@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.Calendar"
+             xmlns:local="clr-namespace:QuickStudyApp.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Calendar" FontSize="Title" FontAttributes="Bold" FontFamily="Arial" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Class" TextColor="Black" FontSize="Body" Grid.Row="1" Grid.Column="1"/>
+                <Button Text="Timetable" Command="{Binding Timetable}" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Asignment Due Date" TextColor="Black" FontSize="Body" FontFamily="Arial" Grid.Row="4" Grid.Column="1"/>
+                <Button Text="Due Date" Command ="{Binding AssignmentDueDate}" Grid.Row="5" Grid.Column="1"/>
+                <Label Text="Notes" TextColor="Black" FontSize="Body" FontFamily="Arial" Grid.Row="7" Grid.Column="1"/>
+                <Button Text="Notes Page" Command ="{Binding NotePage}" Grid.Row="8" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

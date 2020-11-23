@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.TypeOfQuestionPage"
+             Title="FAQ">
+    <ContentPage.Content>
+        <StackLayout>
+            
+
+                <Button Text="Ask a Question"
+                        Margin="100,120,100,10"
+                        CornerRadius="30"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        Clicked="AskAQuestionButton"/>
+
+            <Button Text="Leave Feedback"
+                        Margin="100,50,100,10"
+                        CornerRadius="30"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        Clicked="LeaveFeedbackButton"/>
+
+            <Button Text="Report a Bug"
+                        Margin="100,50,100,10"
+                        CornerRadius="30"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        Clicked="ReportABugButton"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

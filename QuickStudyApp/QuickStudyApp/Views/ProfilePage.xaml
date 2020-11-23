@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickStudyApp.Views.ProfilePage"
+             Title = "Profile">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand">
+        <StackLayout>
+            <Image
+                Margin="100,40,100,10"
+                WidthRequest="150"
+                HeightRequest="150" 
+                HorizontalOptions="Center"
+                Source="elon.jpg">
+                <Image.Clip>
+                    <EllipseGeometry
+                        Center = "75,75"
+                        RadiusX="75"
+                        RadiusY="75"
+                        />
+                </Image.Clip>
+            </Image>
+
+            <Label Text ="Queensland University of Technology"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,0"/>
+            <Label Text="Elon Musk" Margin="40,30,10,0"
+                   FontSize="20"/>
+            <Label Text="Bachelor Student" Margin="40,20,10,0"
+                   FontSize="20"/>
+            <Label Text="Science and Engineering" Margin="40,20,10,0"
+                   FontSize="20"/>
+            <Label Text="N123456789" Margin="40,20,10,0"
+                   FontSize="20"/>
+            <Label Text="XAE_12@connect.qut.edu.au"  Margin="40,20,10,0"
+                   FontSize="20"/>
+
+            <Button VerticalOptions="Center" 
+                    Text="Logout" 
+                    Command="{Binding NavCommand}" 
+                    Margin="100,30,100,50"
+                    FontSize="20"
+                    TextColor="Black"
+                    CornerRadius="12"
+                    WidthRequest="100"
+                    HeightRequest="50" />
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+    
