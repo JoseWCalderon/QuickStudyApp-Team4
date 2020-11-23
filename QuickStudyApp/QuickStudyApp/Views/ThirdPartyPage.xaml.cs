@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,7 +21,7 @@ namespace QuickStudyApp.Views
             ThirdParties = new List<ThirdParty>();
             ThirdParties.Add(new ThirdParty
             {
-                Name = "First Application",
+                Name = "Application Link (Google Sample)",
                 LinkUrl = "http://www.google.com.au"
             });
 
@@ -31,7 +31,10 @@ namespace QuickStudyApp.Views
 
         private void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            ThirdParty selectedItem = e.SelectedItem as ThirdParty;
+            //ThirdParty selectedItem = e.SelectedItem as ThirdParty;
+            //Device.OpenUri(new System.Uri("https://play.google.com/store/apps"));
+
+            Launcher.TryOpenAsync("http://play.google.com/store/apps/details?id=com.google.android.apps.maps");
         }
 
         private void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
