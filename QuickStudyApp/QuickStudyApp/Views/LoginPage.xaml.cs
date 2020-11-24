@@ -41,7 +41,8 @@ namespace QuickStudyApp.Views
             }
             else
             {
-                await App.Current.MainPage.Navigation.PushAsync(new HomePage());
+              //  await App.Current.MainPage.Navigation.PushAsync(new AppShell());
+                await App.Current.MainPage.Navigation.PopToRootAsync();
             }
             
 
