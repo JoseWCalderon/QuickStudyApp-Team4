@@ -13,9 +13,9 @@
             <Button VerticalOptions="Center" 
                     Text="My Groups" 
                     Margin="100,80,100,30"
-                    FontSize="20"
-                    TextColor="Black"
-                    CornerRadius="12"
+                    
+                    TextColor="White"
+                    CornerRadius="30"
                     WidthRequest="100"
                     HeightRequest="50" 
                     Clicked="MyGroupsClicked"/>
@@ -23,26 +23,26 @@
                     Text="Invitations" 
                     Command="{Binding NavCommand}" 
                     Margin="100,30,100,30"
-                    FontSize="20"
-                    TextColor="Black"
-                    CornerRadius="12"
+                   
+                    TextColor="White"
+                    CornerRadius="30"
                     WidthRequest="100"
                     HeightRequest="50" />
             <Button VerticalOptions="Center" 
                     Text="Tools" 
                     Margin="100,30,100,30"
-                    FontSize="20"
-                    TextColor="Black"
-                    CornerRadius="12"
+                    
+                    TextColor="White"
+                    CornerRadius="30"
                     WidthRequest="100"
                     HeightRequest="50" 
                     Clicked="ToolsClicked"/>
             <Button VerticalOptions="Center" 
                     Text="Help Sessions" 
                     Margin="100,30,100,30"
-                    FontSize="20"
-                    TextColor="Black"
-                    CornerRadius="12"
+                   
+                    TextColor="White"
+                    CornerRadius="30"
                     WidthRequest="100"
                     HeightRequest="50" 
                     Clicked="HelpClicked"/>

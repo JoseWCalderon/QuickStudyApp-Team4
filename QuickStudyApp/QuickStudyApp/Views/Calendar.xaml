@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuickStudyApp.Views.Calendar"
              xmlns:local="clr-namespace:QuickStudyApp.ViewModels"
-             Title="{Binding Title}">
+             Title="Calendar">
 
     <ContentPage.Content>
         <StackLayout>
@@ -24,7 +24,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Label Text="Calendar" FontSize="Title" FontAttributes="Bold" FontFamily="Arial" Grid.Row="0" Grid.Column="1"/>
+                
                 <Label Text="Class" TextColor="Black" FontSize="Body" Grid.Row="1" Grid.Column="1"/>
                 <Button Text="Timetable" Command="{Binding Timetable}" Grid.Row="2" Grid.Column="1"/>
                 <Label Text="Asignment Due Date" TextColor="Black" FontSize="Body" FontFamily="Arial" Grid.Row="4" Grid.Column="1"/>

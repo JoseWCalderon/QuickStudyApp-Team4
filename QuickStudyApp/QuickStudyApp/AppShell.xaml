@@ -84,7 +84,8 @@
     -->
     <Shell.FlyoutHeader>
         <StackLayout>
-            <Image Source="Logo_Bigger.jpg"></Image>
+            
+            <Image Source=""></Image>
         </StackLayout>
     </Shell.FlyoutHeader>
 
