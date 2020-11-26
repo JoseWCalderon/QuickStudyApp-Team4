@@ -4,6 +4,11 @@
              x:Class="QuickStudyApp.Views.AskAQuestionPage"                 
              xmlns:controls="clr-namespace:QuickStudyApp.Custom" 
              Title="Ask a Question">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save"
+                     Clicked="SubmitButton"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>
@@ -17,7 +22,8 @@
                                             PlaceholderColor="Black"
                                             Margin="10,50,10,10"/>
 
-            <Button Text="Submit"
+            <Button x:Name="questionEntry"
+                        Text="Submit"
                         Margin="100,120,100,10"
                         CornerRadius="30"
                         BackgroundColor="{StaticResource Primary}"

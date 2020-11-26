@@ -4,7 +4,7 @@
              x:Class="QuickStudyApp.Views.FilePage"
              xmlns:data="clr-namespace:QuickStudyApp.Data"
              xmlns:controls="clr-namespace:QuickStudyApp.Controls"
-             xmlns:commands="clr-namespace:QuickStudyApp.ViewModels.Commands"
+             
              xmlns:vm="clr-namespace:QuickStudyApp.ViewModels"
 
              Title="IAB330">
@@ -27,7 +27,7 @@
         <ScrollView>
             <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
                 <Label Text="Recent Files"
-                FontSize="22"
+                FontSize="20"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 Margin="0,20,0,20"

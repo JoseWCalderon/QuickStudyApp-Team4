@@ -14,8 +14,8 @@
                     Text="Recordings" 
                     Margin="100,30,100,30"
                     FontSize="20"
-                    TextColor="Black"
-                    CornerRadius="12"
+                    TextColor="White"
+                    CornerRadius="20"
                     WidthRequest="100"
                     HeightRequest="50"
                     Clicked="RecordingsClicked"/>
@@ -25,8 +25,8 @@
                     Text="Announcements" 
                     Margin="100,30,100,30"
                     FontSize="20"
-                    TextColor="Black"
-                    CornerRadius="12"
+                    TextColor="White"
+                    CornerRadius="20"
                     WidthRequest="100"
                     HeightRequest="50"/>
 
@@ -34,8 +34,8 @@
                     Text="My Grades" 
                     Margin="100,30,100,30"
                     FontSize="20"
-                    TextColor="Black"
-                    CornerRadius="12"
+                    TextColor="White"
+                    CornerRadius="20"
                     WidthRequest="100"
                     HeightRequest="50"
                     Clicked="MyGradesClicked"/>
