@@ -54,25 +54,33 @@
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="10,0,10,0" Spacing="0">
 
+                <ListView x:Name="questionListView"
+                          ItemSelected="questionListView_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding QuestionDetail}">
+                                
+                            </TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                
+                
                 <!--<ListView Margin="15"
                     ItemsSource="{x:Static data:FAQData.FAQs}"
                     HasUnevenRows="True"
                     SelectionMode="Single"
-                    
-                    
-                    
-                
-                     
-                    
-                    
+          
                    />-->
-                
+
                 <!--binding here to the data class, static method access-->
+                <!--
                 <ListView ItemsSource="{x:Static data:FAQData.FAQs}"
                           Margin="15"
-                          HasUnevenRows="true"
-                          ItemSelected="SelectedFAQ_ItemSelected"
-                          ItemTapped="TappedFAQ_ItemTapped">
+                          HasUnevenRows="true">-->
+                <!--ItemSelected="SelectedFAQ_ItemSelected"
+                          ItemTapped="TappedFAQ_ItemTapped">-->
+                <!--
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -94,11 +102,12 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </StackLayout>
-            
-            
-           
+            </StackLayout>-->
 
+
+
+
+            </StackLayout>
         </ScrollView>
         <ScrollView Grid.Row="2">
 

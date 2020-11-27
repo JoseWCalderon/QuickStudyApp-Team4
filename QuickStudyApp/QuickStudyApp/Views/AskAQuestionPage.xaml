@@ -19,6 +19,7 @@
             
             <!-- Import this class custom that has my custom classes and mods -->
             <controls:ExtendedEditorControl Placeholder="Write Here"
+                                            x:Name="textEntry"
                                             PlaceholderColor="Black"
                                             Margin="10,50,10,10"/>
 

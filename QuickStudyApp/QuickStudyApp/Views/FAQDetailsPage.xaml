@@ -9,7 +9,7 @@
             <!--<Label Text="{Binding Question}"
                    HorizontalOptions="Center"
                    Style="{DynamicResource TitleStyle}"/>-->
-            <Label x:Name="questionLabal"
+            <Label x:Name="questionLabel"
                    FontSize="22"
                    FontAttributes="Bold"
                    Text="Coworking Space"
@@ -19,6 +19,14 @@
                    Margin="0,50,0,0"
                    TextColor="Black"
                    />
+            <Entry x:Name="questionEntry"></Entry>
+            <Button Text="Update"
+                    x:Name="updateButton"
+                    Clicked="updateButton_Clicked"></Button>
+            <Button Text="Delete"
+                    x:Name="deleteButton"
+                    Clicked="deleteButton_Clicked"></Button>
+            
             
             <!--<Button Text="Leave Feedback">
                 

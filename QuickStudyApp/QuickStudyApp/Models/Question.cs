@@ -11,7 +11,7 @@ namespace QuickStudyApp.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
-        [MaxLength(250)]
+        //[MaxLength(250)]
         public string QuestionDetail { get; set; }
     }
 }
